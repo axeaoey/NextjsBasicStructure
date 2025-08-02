@@ -99,6 +99,44 @@ git push origin --delete feature/ชื่อฟีเจอร์
 
 ---
 
+## 🛠️ โครงสร้างโฟลเดอร์
+
+```
+NextjsBasicStructure/
+├── .gitattributes
+├── .gitignore
+├── README.md                   # คำอธิบายวิธีใช้งาน + git branch
+├── next-env.d.ts              # (จะถูกสร้างอัตโนมัติโดย Next.js ตอนรัน)
+├── next.config.js
+├── package-lock.json          # ถูกสร้างหลัง `npm install`
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+├── tsconfig.json
+│
+├── public/
+│   ├── favicon.ico
+│   └── images/
+│       └── login.png
+│
+└── src/
+    ├── assets/                # (ยังว่าง)
+    ├── components/
+    │   ├── Admin/
+    │   ├── Contact/
+    │   └── Navbar/
+    │       └── Navbar.tsx
+    │
+    ├── pages/
+    │   ├── _app.tsx
+    │   ├── index.tsx         # ทดสอบ Tailwind แล้ว
+    │   └── login.tsx
+    │
+    └── styles/
+        └── globals.css       # ใช้ @tailwind base/components/utilities
+
+---
+
 ## 📦 Build production
 ```bash
 npm run build
