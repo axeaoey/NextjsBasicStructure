@@ -134,6 +134,7 @@ NextjsBasicStructure/
     │
     └── styles/
         └── globals.css       # ใช้ @tailwind base/components/utilities
+```
 
 ---
 
